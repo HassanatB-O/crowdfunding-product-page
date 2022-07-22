@@ -1,0 +1,475 @@
+*{
+    margin: 0;
+    font-family: 'Commissioner', sans-serif;
+}
+body{
+    background-color: hsl(0, 0%, 93%);
+}
+/* Hamburger */
+#icon-hamburger{
+    width: 35px;
+    height: 22px;
+    display: none;
+}
+#icon-close-menu{
+    display: none;
+    width: 20px;
+    height: 20px;
+}
+#hamburger-ul{
+    background-color: hsl(0, 0%, 100%);
+    width: 80%;
+    margin: auto;
+    color: hsl(0, 0%, 0%);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 6px;
+    position: absolute;
+    display: none;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 12%;
+}
+#hamburger-ul li{
+    color: hsl(0, 0%, 0%);
+    line-height: 2;
+    font-weight: 700;
+}
+hr{
+    height: 0.1px;
+    background-color: hsl(0, 0%, 93%);
+}
+/* Hamburger */
+/* Header */
+header{
+    background-image: url(images/image-hero-desktop.jpg);
+    background-size: 100%;
+    padding: 40px;
+    height: 350px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 27%;
+}
+li{
+    list-style-type: none;
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+}
+/* Header */
+/* Bookmark Section */
+#bookmark{
+    background-color: hsl(0, 0%, 100%);
+    width: 40%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    margin-top: -75px;
+    border-radius: 6px;
+    line-height: 1.7;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+#close{
+    display: flex;
+    justify-content: space-between;
+}
+#icon-close-modal{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+#icon-close-modal:hover{
+    filter: black;
+}
+#back-btn{
+    background-color: hsl(176, 50%, 47%);
+    border: none;
+    padding: 12px;
+    border-radius: 20px;
+    color: white;
+    width: 160px;
+    font-weight: 700;
+    cursor: pointer;
+}
+#back-btn:active, #back-btn:hover{
+    background-color: hsl(176, 72%, 28%);
+}
+#icon-bookmark{
+    height: 40px;
+    width: 40px;
+}
+#icon-bookmark-colored{
+    height: 40px;
+    width: 40px;
+    filter: invert(61%) sepia(74%) saturate(348%) hue-rotate(127deg) brightness(87%) contrast(89%);
+}
+#bookmark-btn{
+    background-color: hsl(0, 0%, 93%);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 130px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+#bookmark-btn p{
+    color: hsl(0, 0%, 0%);
+    font-weight: 700;
+}
+#bookmark-btn-colored{
+    background-color: hsl(0, 0%, 93%);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 140px;
+    padding-right: 10px;
+    cursor: pointer;
+    display: none;
+}
+#bookmark-btn-colored p{
+    color: hsl(176, 72%, 28%);
+    font-weight: 700;
+}
+h1{
+    color: hsl(0, 0%, 0%);
+    text-transform: capitalize;
+}
+p{
+    color: hsl(0, 0%, 48%);
+}
+#logo-mastercraft{
+    display: flex;
+    margin: auto;
+    margin-top: -45px;
+}
+/* Bookmark Section */
+/* Progress Section */
+#progress{
+    background-color: hsl(0, 0%, 100%);
+    width: 40%;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    margin-top: 120px;
+}
+#progress-div{
+    display: flex;
+    justify-content: space-between;
+}
+#amount-money, #amount-people, #amount-days{
+    width: 30%;
+    line-height: 1.6;
+}
+#amount-money{
+    border-right: 3px solid hsl(0, 0%, 93%);
+}
+#amount-people{
+    border-right: 3px solid hsl(0, 0%, 93%);
+    margin-left: 15px;
+}
+#progress-bar{
+    height: 10px;
+    background: linear-gradient(to right, hsl(176, 50%, 47%) 75%, hsl(0, 0%, 95%) 25%);
+    border-radius: 10px;
+    margin: 20px 0 10px 0;
+}
+/* Progress Section */
+/* About Section */
+#about-project{
+    background-color: hsl(0, 0%, 100%);
+    width: 40%;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 6px;
+}
+h2{
+    font-size: 20px;
+}
+#details{
+    margin: 20px 0 20px 0;
+    line-height: 1.5;
+}
+#stand{
+    padding: 20px;
+    border: 2px solid hsl(0, 0%, 93%);
+    margin: 20px 0 10px 0;
+    border-radius: 5px;
+    line-height: 1.7;
+}
+#text{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 10px 0;
+}
+#pledge{
+    color: hsl(176, 50%, 47%);
+    font-weight: 500;
+}
+#left{
+    color: hsl(0, 0%, 48%);
+    font-size: 15px;
+    text-transform: lowercase;
+    font-weight: 400;
+}
+#select-btn{
+    background-color: hsl(176, 50%, 47%);
+    border: none;
+    padding: 12px;
+    border-radius: 20px;
+    color: white;
+    width: 160px;
+    font-weight: 700;
+    cursor: pointer; 
+}
+#select-btn:active, #select-btn:hover{
+    background-color: hsl(176, 72%, 28%);
+}
+#special-stand{
+    padding: 20px;
+    border: 2px solid hsl(0, 0%, 93%);
+    margin: 20px 0 10px 0;
+    border-radius: 5px;
+    line-height: 1.7;
+    opacity: 0.4;
+}
+#out-btn{
+    background-color: hsl(0, 0%, 48%);
+    border: none;
+    padding: 12px;
+    border-radius: 20px;
+    color: white;
+    width: 160px;
+    font-weight: 700;
+    cursor: pointer; 
+}
+/* About Section */
+/* Thank You Modal */
+#thank-you-modal{
+    background-color: hsl(0, 0%, 100%);
+    width: 30%;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 6px;
+    text-align: center;
+    display: none;
+}
+#got-btn{
+    background-color: hsl(176, 50%, 47%);
+    border: none;
+    padding: 12px;
+    border-radius: 20px;
+    color: white;
+    width: 100px;
+    font-weight: 700;
+    cursor: pointer; 
+}
+/* Thank You Modal */
+/* Back Project Modal */
+#back-project{
+    background-color: hsl(0, 0%, 100%);
+    width: 40%;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    margin-top: 150px;
+    border-radius: 6px;
+    display: none;
+}
+#radio-stand-one, #radio-stand-two, #radio-stand-three{
+    padding: 20px;
+    border: 2px solid hsl(0, 0%, 93%);
+    margin: 20px 0 10px 0;
+    border-radius: 5px;
+    line-height: 1.7;
+    cursor: pointer;
+}
+#radio-stand-one:active, #radio-stand-two:active, #radio-stand-three:active{
+    border: 2px solid hsl(176, 50%, 47%);
+}
+#radio-stand-one:hover, #radio-stand-two:hover, #radio-stand-three:hover{
+    border: 2px solid hsl(176, 50%, 47%);
+}
+#radio-stand-four{
+    padding: 20px;
+    border: 2px solid hsl(0, 0%, 93%);
+    margin: 20px 0 10px 0;
+    border-radius: 5px;
+    line-height: 1.7;
+    opacity: 0.4;
+    cursor: pointer;
+}
+#label-h1{
+    font-weight: 700;
+    font-size: 17px;
+}
+#label-h1:active{
+    color: hsl(176, 50%, 47%);
+}
+#label-h1:hover{
+    color: hsl(176, 50%, 47%);
+}
+#label-text{
+    font-weight: 700;
+    font-size: 17px;
+    float: right;
+}
+input[type=radio]{
+    display: none;
+}
+input[type=radio] + *::before{
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 5px;
+    border: 1px solid hsl(0, 0%, 48%);
+}
+input[type=radio]:checked + *::before{
+    background-color: hsl(176, 50%, 47%);
+    border: 2px solid hsl(0, 0%, 48%);
+}
+#enter-pledge{
+    display: none;
+}
+#input-pledge{
+    display: flex;
+    justify-content: space-between;
+}
+#input-amount{
+    border-radius: 20px;
+    width: 60px;
+    padding: 10px;
+    border: 2px solid hsl(0, 0%, 48%);
+    cursor: pointer;
+}
+#input-amount:active{
+    border: 2px solid hsl(176, 50%, 47%);
+}
+input::placeholder{
+    font-weight: 700;
+}
+#continue-btn{
+    background-color: hsl(176, 50%, 47%);
+    border: none;
+    padding: 12px;
+    border-radius: 20px;
+    color: white;
+    width: 100px;
+    font-weight: 700;
+    cursor: pointer; 
+}
+#continue-btn:active, #continue-btn:hover{
+    background-color: hsl(176, 72%, 28%);
+}
+hr{
+    margin: 20px 0 20px 0;
+}
+/* Back Project Modal */
+
+@media screen and (min-width: 801px) and (max-width: 1200px){
+    #bookmark{
+        margin-top: -180px;
+    } 
+    #progress{
+        margin-top: 70px;
+    }
+}
+@media screen and (min-width: 451px) and (max-width: 800px){    
+    #bookmark, #progress, #about-project, #back-project{
+        width: 70%;
+    }
+    #bookmark{
+        margin-top: -150px;
+    }
+    header{
+        height: 200px;
+    }    
+    #thank-you-modal{
+        width: 60%;
+    }
+}
+@media screen and (min-width: 601px) and (max-width: 800px){    
+    ul{
+        width: 40%;
+    }
+    #progress{
+        margin-top: 80px;
+    }
+}
+@media screen and (min-width: 451px) and (max-width: 600px){    
+    ul{
+        width: 50%;
+    }
+    #progress{
+        margin-top: 130px;
+    }
+}
+@media screen and (max-width: 450px){
+    header{
+        background-image: url(images/image-hero-mobile.jpg);
+        background-repeat: no-repeat;
+    }
+    #icon-hamburger{
+        display: block;
+    }
+    ul{
+        display: none;
+    }
+    #bookmark, #progress, #about-project, #back-project{
+        width: 80%;
+    }
+    #bookmark-btn, #bookmark-btn-colored{
+        width: 0;
+        justify-content: center;
+    }
+    #bookmark-btn p, #bookmark-btn-colored p{
+        display: none;
+    }
+    #buttons{
+        justify-content: space-evenly;
+    }
+    #bookmark{
+        margin-top: -140px;
+    }
+    #thank-you-modal{
+        width: 70%;
+    }
+    #progress-div{
+        flex-direction: column;
+        text-align: center;
+    }
+    #amount-people, #amount-money, #amount-days{
+        border: none;
+        width: 100%;
+        margin-left: 0;
+    }
+}
