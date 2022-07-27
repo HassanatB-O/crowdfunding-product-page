@@ -331,7 +331,7 @@ h2{
 .label-h1:hover{
     color: hsl(176, 50%, 47%);
 }
-#label-text{
+.label-text{
     font-weight: 700;
     font-size: 17px;
     float: right;
