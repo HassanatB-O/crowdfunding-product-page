@@ -201,33 +201,33 @@ p{
 h2{
     font-size: 20px;
 }
-#details{
+.details{
     margin: 20px 0 20px 0;
     line-height: 1.5;
 }
-#stand{
+.stand{
     padding: 20px;
     border: 2px solid hsl(0, 0%, 93%);
     margin: 20px 0 10px 0;
     border-radius: 5px;
     line-height: 1.7;
 }
-#text{
+.text{
     display: flex;
     justify-content: space-between;
     margin: 10px 0 10px 0;
 }
-#pledge{
+.pledge{
     color: hsl(176, 50%, 47%);
     font-weight: 500;
 }
-#left{
+.left{
     color: hsl(0, 0%, 48%);
     font-size: 15px;
     text-transform: lowercase;
     font-weight: 400;
 }
-#select-btn{
+.select-btn{
     background-color: hsl(176, 50%, 47%);
     border: none;
     padding: 12px;
@@ -237,7 +237,7 @@ h2{
     font-weight: 700;
     cursor: pointer; 
 }
-#select-btn:active, #select-btn:hover{
+.select-btn:active, .select-btn:hover{
     background-color: hsl(176, 72%, 28%);
 }
 #special-stand{
@@ -321,14 +321,14 @@ h2{
     opacity: 0.4;
     cursor: pointer;
 }
-#label-h1{
+.label-h1{
     font-weight: 700;
     font-size: 17px;
 }
-#label-h1:active{
+.label-h1:active{
     color: hsl(176, 50%, 47%);
 }
-#label-h1:hover{
+.label-h1:hover{
     color: hsl(176, 50%, 47%);
 }
 #label-text{
