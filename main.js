@@ -1,4 +1,4 @@
-let selectBtn = document.querySelectorAll("#select-btn")
+let selectBtn = document.querySelectorAll(".select-btn")
 let thankYouModal = document.getElementById("thank-you-modal")
 let gotBtn = document.getElementById("got-btn")
 let body = document.getElementById("container")
