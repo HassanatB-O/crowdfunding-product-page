@@ -12,17 +12,28 @@ let total = document.getElementById("amount-people-p")
 selectBtn.forEach(selection =>{
     selection.addEventListener('click', () =>{
         console.log("selected")
-        thankYouModal.style.display = "block"
+        backProjectModal.style.display = "block"
         body.style.opacity = "0.5"
-        thankYouModal.style.filter = "brightness(1)"
+        backProjectModal.style.filter = "brightness(1)"
         window.scrollTo(0,0)
         total.innerText = (parseInt(total.innerText) + 1)
+    })
+})
+
+document.querySelectorAll("#continue-btn").forEach(button =>{
+    button.addEventListener('click', ()=>{
+        thankYouModal.style.display = "block"
+        body.style.opacity = "0.5"
+        backProjectModal.style.display = "none"
+        window.scrollTo(0,0)
     })
 })
 
 gotBtn.addEventListener('click', () =>{
     thankYouModal.style.display = "none"
     body.style.opacity = "1"
+    document.getElementById("enter-pledge").style.display = "none"
+    document.getElementById("pledge-entry").style.display = "none"
 })
 
 backBtn.addEventListener('click', () =>{
@@ -38,6 +49,10 @@ closeModal.addEventListener('click', () =>{
 
 document.getElementById("radio-stand-two").addEventListener('click', () =>{
     document.getElementById("enter-pledge").style.display = "block"
+})
+
+document.getElementById("radio-stand-three").addEventListener('click', () =>{
+    document.getElementById("pledge-entry").style.display = "block"
 })
 
 document.getElementById("bookmark-btn").addEventListener('click', () =>{
